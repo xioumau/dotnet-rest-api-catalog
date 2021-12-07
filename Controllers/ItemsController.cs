@@ -11,12 +11,12 @@ namespace Catalog.Controllers
     public class ItemsController : ControllerBase
     {
         // propertie
-        private readonly InMemItemsRepository repository;
+        private readonly IItemsRepository repository;
 
         // method
-        public ItemsController()
+        public ItemsController(IItemsRepository repository)
         {
-            repository = new InMemItemsRepository();
+           this.repository = repository;
         }
 
         // GET /items
@@ -40,6 +40,7 @@ namespace Catalog.Controllers
                 return NotFound();
             }
 
+         
             return item;
         }
     }
