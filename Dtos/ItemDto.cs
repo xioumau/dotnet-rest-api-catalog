@@ -2,7 +2,6 @@ using System;
 
 namespace Catalog.Dtos
 {
-
     public record ItemDto 
     {
         public Guid Id { get; init; }
