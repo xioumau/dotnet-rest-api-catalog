@@ -41,7 +41,6 @@ namespace Catalog.Controllers
                 // ActionResult
                 return NotFound();
             }
-
          
             return item.AsDto();
         }
