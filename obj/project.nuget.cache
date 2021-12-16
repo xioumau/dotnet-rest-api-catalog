@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bI5dHlKITAGim9PUCdOFAQEUzfW5lZUEQCLC2ytbmvmYZAb7ECO+mHswLJsU/4FPAEL7uUX8Eqt5m3asqYKJ1A==",
+  "dgSpecHash": "2u7QiERoEgVDlZRj5u5F6JOBH/sRCbWo7zEtUwZmusxICxZONDAJ7ksamPoKVWugMgGXQ89iMRCaAQZNRwbMsw==",
   "success": true,
   "projectFilePath": "/home/mauricio/vscodeProjects/dotnetRestApi/Catalog/Catalog.csproj",
   "expectedPackageFiles": [

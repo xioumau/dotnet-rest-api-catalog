@@ -39,9 +39,8 @@ namespace Catalog
             
             services.AddSingleton<IMongoClient>(serviceProvider =>
             {
-               // var settings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>(); 
-                return new MongoClient("mongodb://localhost:27017");
-                
+                var settings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>(); 
+                return new MongoClient(settings.ConnectionString);                
             });
 
             services.AddSingleton<IItemsRepository, MongoDbItemsRepository>();
