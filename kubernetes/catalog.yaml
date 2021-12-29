@@ -23,7 +23,7 @@ spec:
         env:
           - name: MongoDbSettings__Host
             value: mongodb-service
-          - name: MonDbSettings__Password
+          - name: MongoDbSettings__Password
             valueFrom: 
               secretKeyRef: 
                 name: catalog-secrets
